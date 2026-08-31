@@ -1,0 +1,138 @@
+:root {
+  --accent: #1DBE85;        /* replace with app's actual accent color */
+  --accent-text: #04342C;
+  --bg: #000000;
+  --card-bg: #111113;
+  --text: #ffffff;
+  --text-muted: rgba(255,255,255,0.55);
+  --dot-off: rgba(255,255,255,0.2);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tutorial {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: calc(env(safe-area-inset-top, 12px) + 8px) 20px 12px;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+  flex: 1;
+}
+
+.dots span {
+  height: 3px;
+  border-radius: 2px;
+  flex: 1;
+  background: var(--dot-off);
+  transition: background 0.25s;
+}
+
+.dots span.active {
+  background: var(--accent);
+}
+
+.skip {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+.screen-wrap {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 16px;
+}
+
+.screenshot {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 24px;
+  object-fit: contain;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.bottom-card {
+  background: var(--card-bg);
+  padding: 16px 20px calc(env(safe-area-inset-bottom, 16px) + 16px);
+  border-top: 0.5px solid rgba(255,255,255,0.08);
+}
+
+.instruction {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 0 14px;
+  min-height: 44px;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  height: 46px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border: 0.5px solid rgba(255,255,255,0.25);
+}
+
+.btn-ghost:disabled {
+  opacity: 0.35;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+<title>Lock Screen Widget Setup</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="tutorial">
+
+  <div class="topbar">
+    <div class="dots" id="dots"></div>
+    <button class="skip" id="skipBtn" aria-label="Skip tutorial">Skip</button>
+  </div>
+
+  <div class="screen-wrap">
+    <div class="badge" id="badge">1</div>
+    <img id="screenshot" class="screenshot" src="" alt="Tutorial step screenshot" />
+  </div>
+
+  <div class="bottom-card">
+    <p class="instruction" id="instruction"></p>
+    <div class="btn-row">
+      <button class="btn btn-ghost" id="backBtn">Back</button>
+      <button class="btn btn-primary" id="nextBtn">Next</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
