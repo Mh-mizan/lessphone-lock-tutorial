@@ -1,17 +1,17 @@
-// Drop your final screenshots into /assets as step-1.png ... step-10.png
+// Drop your final screenshots into /assets as step-1.jpg ... step-10.jpg
 // Keep the same crop/resolution for all 10 so the frame doesn't jump between steps.
 
 const STEPS = [
-  { img: "assets/step-1.png",  text: "Tap and hold the lock screen" },
-  { img: "assets/step-2.png",  text: "Tap Customize" },
-  { img: "assets/step-3.png",  text: "Tap on Lock Screen" },
-  { img: "assets/step-4.png",  text: "Tap Add Widget" },
-  { img: "assets/step-5.png",  text: "Find and tap LessPhone" },
-  { img: "assets/step-6.png",  text: "Choose the widget you want" },
-  { img: "assets/step-7.png",  text: "Tap Close" },
-  { img: "assets/step-8.png",  text: "Tap Close again" },
-  { img: "assets/step-9.png",  text: "Tap Done" },
-  { img: "assets/step-10.png", text: "Your widget is set up" },
+  { img: "assets/step-1.jpg",  text: "Tap and hold the lock screen" },
+  { img: "assets/step-2.jpg",  text: "Tap Customize" },
+  { img: "assets/step-3.jpg",  text: "Tap on Lock Screen" },
+  { img: "assets/step-4.jpg",  text: "Tap Add Widget" },
+  { img: "assets/step-5.jpg",  text: "Find and tap LessPhone" },
+  { img: "assets/step-6.jpg",  text: "Choose the widget you want" },
+  { img: "assets/step-7.jpg",  text: "Tap Close" },
+  { img: "assets/step-8.jpg",  text: "Tap Close again" },
+  { img: "assets/step-9.jpg",  text: "Tap Done" },
+  { img: "assets/step-10.jpg", text: "Your widget is set up" },
 ];
 
 let current = 0;
